@@ -1,0 +1,10 @@
+<!DOCTYPE cruisecontrol [
+<!ENTITY DemoProjectBasePublisher SYSTEM "file:ProjectXmls\EggChicken.xml">
+]>
+<cruisecontrol>
+  <!-- This is your CruiseControl.NET Server Configuration file. Add your projects below! -->
+  <!--
+		<project name="MyFirstProject" />
+	-->
+  &DemoProjectBasePublisher;
+</cruisecontrol>

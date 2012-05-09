@@ -1,0 +1,54 @@
+<!-- Project Tag contains the friendly name for the project, queue name that ensures dependant projects are build sequentially and queue priority to ensure dependant projects are build in particular order.-->
+
+<project name="DemoCruiseProject" queue="Test"  queuePriority="1">
+  <!-- Category groups projects together.-->
+  <category>Cruise</category>
+  <!-- Reporting URL for project -->
+  <webURL>http://localhost/EggChicken/</webURL>
+  <!-- Refer modification delay from DTD definition on top -->
+  <modificationDelaySeconds>60</modificationDelaySeconds>
+  <triggers>
+    <!-- IntervalTrigger checks for modifications afer specified delay in seconds from the version control system-->
+    <intervalTrigger seconds="300" />
+  </triggers>
+
+  <!-- Source control block to get code-->
+
+  <sourcecontrol type="svn">
+    <!-- Path to source control client -->
+
+    <executable>C:\Program Files\svn-win32-1.5.0\bin\svn.exe</executable>
+
+    <!-- Location of code in the source control for this project-->
+
+    <trunkUrl>http://code.travelnxt.com:8080/svn/NewBies/Mandar/EggChicken</trunkUrl>
+    <!-- UserName for getting code-->
+    <username>ccontrol</username>
+    <!-- SVN username's password-->
+    <password>test123!@#</password>
+
+    <!-- Working directory where to download the code from source control, relative paths are inside the working directory of the project inside the cc.net installation folder-->
+    <workingDirectory>.\Source</workingDirectory>
+    <!-- Whether to delete the working copy before updating the source. -->
+    <cleanCopy>true</cleanCopy>
+    <!--Whether to retrieve the updates from Subversion for a particular build.-->
+    <autoGetSource>true</autoGetSource>
+    <!--Sets the timeout period for the source control operation.-->
+    <timeout units="minutes">10</timeout>
+  </sourcecontrol>
+  <!-- Add Labeller -->
+  <!-- Prebuild tasks are executed before the source control get begins.-->
+  <prebuild>
+  </prebuild>
+  <!-- Tasks block is the actual build section which is triggered once the source control get operation is completed-->
+  <tasks>
+    <!-- MSBuild task to build the .net solution-->
+    <msbuild>
+      <executable>c:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe</executable>
+      <workingDirectory>Source</workingDirectory>
+      <projectFile>EggChicken.sln</projectFile>
+      <buildArgs>/p:Configuration=Release /p:Platform="x86" /v:n</buildArgs>
+      <timeout>600</timeout>
+    </msbuild>
+  </tasks>  
+</project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ScrollableListboxSample", "ScrollableListboxSample\", "{01752172-D727-4E04-9775-34A23016228A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/ScrollableListboxSample"
+		Debug.AspNetCompiler.PhysicalPath = ".\ScrollableListboxSample\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ScrollableListboxSample\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ScrollableListboxSample"
+		Release.AspNetCompiler.PhysicalPath = ".\ScrollableListboxSample\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ScrollableListboxSample\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3593"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01752172-D727-4E04-9775-34A23016228A}.Debug|.NET.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Debug|.NET.Build.0 = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Release|.NET.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Release|.NET.Build.0 = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{01752172-D727-4E04-9775-34A23016228A}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

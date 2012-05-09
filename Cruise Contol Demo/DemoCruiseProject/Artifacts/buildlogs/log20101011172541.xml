@@ -1,0 +1,67 @@
+<cruisecontrol project="DemoCruiseProject">
+  <request source="EPIC" buildCondition="ForceBuild">mdesai triggered a build (ForceBuild) from EPIC</request>
+  <parameters>
+    <parameter name="$CCNetArtifactDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts" />
+    <parameter name="$CCNetBuildCondition" value="ForceBuild" />
+    <parameter name="$CCNetBuildDate" value="2010-10-11" />
+    <parameter name="$CCNetBuildTime" value="17:25:41" />
+    <parameter name="$CCNetFailureUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetIntegrationStatus" value="Unknown" />
+    <parameter name="$CCNetLabel" value="1" />
+    <parameter name="$CCNetLastIntegrationStatus" value="Unknown" />
+    <parameter name="$CCNetListenerFile" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml" />
+    <parameter name="$CCNetModifyingUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetNumericLabel" value="1" />
+    <parameter name="$CCNetProject" value="DemoCruiseProject" />
+    <parameter name="$CCNetProjectUrl" value="http://localhost/EggChicken/" />
+    <parameter name="$CCNetRequestSource" value="EPIC" />
+    <parameter name="$CCNetUser" value="mdesai" />
+    <parameter name="$CCNetWorkingDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory" />
+  </parameters>
+  <modifications />
+  <integrationProperties>
+    <CCNetArtifactDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts</CCNetArtifactDirectory>
+    <CCNetBuildCondition>ForceBuild</CCNetBuildCondition>
+    <CCNetBuildDate>2010-10-11</CCNetBuildDate>
+    <CCNetBuildTime>17:25:41</CCNetBuildTime>
+    <CCNetFailureUsers />
+    <CCNetIntegrationStatus>Failure</CCNetIntegrationStatus>
+    <CCNetLabel>1</CCNetLabel>
+    <CCNetLastIntegrationStatus>Unknown</CCNetLastIntegrationStatus>
+    <CCNetListenerFile>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml</CCNetListenerFile>
+    <CCNetModifyingUsers />
+    <CCNetNumericLabel>1</CCNetNumericLabel>
+    <CCNetProject>DemoCruiseProject</CCNetProject>
+    <CCNetProjectUrl>http://localhost/EggChicken/</CCNetProjectUrl>
+    <CCNetRequestSource>EPIC</CCNetRequestSource>
+    <CCNetWorkingDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory</CCNetWorkingDirectory>
+    <CCNetUser>mdesai</CCNetUser>
+    <LastIntegrationStatus>Unknown</LastIntegrationStatus>
+    <LastSuccessfulIntegrationLabel>UNKNOWN</LastSuccessfulIntegrationLabel>
+    <LastModificationDate>10/10/2010 5:25:44 PM</LastModificationDate>
+  </integrationProperties>
+  <build date="2010-10-11 17:25:41" buildtime="00:00:03" error="true" buildcondition="ForceBuild">
+
+<msbuild startTime="10/11/2010 17:25:44" elapsedTime="00:00:00" elapsedSeconds="0" success="false">
+  <project file="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln" startTime="10/11/2010 17:25:44" elapsedTime="00:00:00" elapsedSeconds="0" success="false">
+    <target name="ValidateSolutionConfiguration" startTime="10/11/2010 17:25:44" elapsedTime="00:00:00" elapsedSeconds="0" success="false">
+      <error code="MSB4126" file="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln.metaproj" line="0" column="0" timeStamp="10/11/2010 17:25:44"><![CDATA[The specified solution configuration "Release|Mixed Platforms" is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform="Any CPU") or leave those properties blank to use the default solution configuration.]]></error>
+    </target>
+  </project>
+</msbuild>Build started 10/11/2010 5:25:44 PM.
+Project "C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln" on node 1 (default targets).
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln.metaproj : error MSB4126: The specified solution configuration "Release|Mixed Platforms" is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform="Any CPU") or leave those properties blank to use the default solution configuration. [C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln]
+Done Building Project "C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln" (default target) (1) -&gt;
+(ValidateSolutionConfiguration target) -&gt; 
+  C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln.metaproj : error MSB4126: The specified solution configuration "Release|Mixed Platforms" is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform="Any CPU") or leave those properties blank to use the default solution configuration. [C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.28
+</build>
+</cruisecontrol>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        div
+        {
+            background-color:Lime;
+            width: 100px;
+            border: 1px black;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        /* Using multiple unit types within one animation. */
+        $(document).ready(function () {
+            $("#go").click(function () {
+                $("#block").animate({
+                    width: "90%",
+                    opacity: 0.4,
+                    marginLeft: "0.6in",
+                    fontSize: "5em",
+                    borderWidth: "10px"
+                }, 1500);
+            });
+
+            $("#hidr").click(function () {
+                $("#block").hide("fast", function () {
+                    // use callee so don't have to name the function
+                    $(this).prev().hide("fast", arguments.callee);
+                });
+            });
+            $("#showr").click(function () {
+                $("#block,#go").show(2000);
+            });
+        });
+           
+    </script>
+</head>
+<body>
+    <button id="go">
+        &raquo; Click me</button>
+    <div id="block">
+        Hello!</div>
+    <br />
+    <br />
+    <div>
+        <button id="hidr">
+            Hide</button>
+        <button id="showr">
+            Show</button>
+    </div>
+</body>
+</html>

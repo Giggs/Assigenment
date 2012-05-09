@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Script/JScript.js" type="text/javascript"></script>
+    <style type="text/css">
+        #Button1 {
+            height: 29px;
+            width: 45px;
+        }
+    </style>
+</head>
+<body>
+<center>
+
+<script name = "JavaScript" type="text/javascript">
+    variables();
+</script>
+
+<form>
+<input type = "button" name = "whoseturn" 
+ value = "Player 1">	 
+<br><br><br><br>
+<table>
+<tr><td><input type = "button" name = "b1" value = "      "		 onClick ="change_b1(this.form)" />  
+    <td><input type = "button" name = "b2" value = "      "		 onClick = "change_b2(this.form)" /> 
+    <td><input type = "button" name = "b3" value = "      "		 onClick ="change_b3(this.form)" /> 
+<tr><td><input type = "button" name = "b4" value = "      "		 onClick ="change_b4(this.form)" /> 
+    <td><input type = "button" name = "b5" value = "      "		 onClick = "change_b5(this.form)" /> 
+    <td><input type = "button" name = "b6" value = "      "		 onClick ="change_b6(this.form)" /> 
+<tr><td><input type = "button" name = "b7" value = "      "		 onClick ="change_b7(this.form)" /> 
+    <td><input type = "button" name = "b8" value = "      "		 onClick = "change_b8(this.form)" />   
+    <td><input type = "button" name = "b9" value = "      "      onClick = "change_b9(this.form)" /> 
+</table>
+<br><br>
+
+<input TYPE="button" value="Restart" onClick="history.go(0)"/>
+</center>
+
+</body>
+</html>

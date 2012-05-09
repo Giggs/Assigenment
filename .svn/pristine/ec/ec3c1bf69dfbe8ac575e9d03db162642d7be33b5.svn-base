@@ -1,0 +1,57 @@
+<cruisecontrol project="DemoCruiseProject">
+  <request source="EPIC" buildCondition="ForceBuild">mdesai triggered a build (ForceBuild) from EPIC</request>
+  <parameters>
+    <parameter name="$CCNetArtifactDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts" />
+    <parameter name="$CCNetBuildCondition" value="ForceBuild" />
+    <parameter name="$CCNetBuildDate" value="2010-10-11" />
+    <parameter name="$CCNetBuildTime" value="17:21:34" />
+    <parameter name="$CCNetFailureUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetIntegrationStatus" value="Unknown" />
+    <parameter name="$CCNetLabel" value="UNKNOWN" />
+    <parameter name="$CCNetLastIntegrationStatus" value="Unknown" />
+    <parameter name="$CCNetListenerFile" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml" />
+    <parameter name="$CCNetModifyingUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetNumericLabel" value="0" />
+    <parameter name="$CCNetProject" value="DemoCruiseProject" />
+    <parameter name="$CCNetProjectUrl" value="http://localhost/EggChicken/" />
+    <parameter name="$CCNetRequestSource" value="EPIC" />
+    <parameter name="$CCNetUser" value="mdesai" />
+    <parameter name="$CCNetWorkingDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory" />
+  </parameters>
+  <modifications />
+  <integrationProperties>
+    <CCNetArtifactDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts</CCNetArtifactDirectory>
+    <CCNetBuildCondition>ForceBuild</CCNetBuildCondition>
+    <CCNetBuildDate>2010-10-11</CCNetBuildDate>
+    <CCNetBuildTime>17:21:34</CCNetBuildTime>
+    <CCNetFailureUsers />
+    <CCNetIntegrationStatus>Exception</CCNetIntegrationStatus>
+    <CCNetLabel>UNKNOWN</CCNetLabel>
+    <CCNetLastIntegrationStatus>Unknown</CCNetLastIntegrationStatus>
+    <CCNetListenerFile>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml</CCNetListenerFile>
+    <CCNetModifyingUsers />
+    <CCNetNumericLabel>0</CCNetNumericLabel>
+    <CCNetProject>DemoCruiseProject</CCNetProject>
+    <CCNetProjectUrl>http://localhost/EggChicken/</CCNetProjectUrl>
+    <CCNetRequestSource>EPIC</CCNetRequestSource>
+    <CCNetWorkingDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory</CCNetWorkingDirectory>
+    <CCNetUser>mdesai</CCNetUser>
+    <LastIntegrationStatus>Unknown</LastIntegrationStatus>
+    <LastSuccessfulIntegrationLabel>UNKNOWN</LastSuccessfulIntegrationLabel>
+    <LastModificationDate>10/10/2010 5:21:34 PM</LastModificationDate>
+  </integrationProperties>
+  <build date="2010-10-11 17:21:34" buildtime="00:00:00" buildcondition="ForceBuild" />
+  <exception><![CDATA[System.IO.IOException: Unable to execute file [C:\Program Files\Subversion\svn.exe].  The file may not exist or may not be executable. ---> System.ComponentModel.Win32Exception: The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at ThoughtWorks.CruiseControl.Core.Util.ProcessExecutor.RunnableProcess.StartProcess()
+   --- End of inner exception stack trace ---
+   at ThoughtWorks.CruiseControl.Core.Util.ProcessExecutor.RunnableProcess.StartProcess()
+   at ThoughtWorks.CruiseControl.Core.Util.ProcessExecutor.RunnableProcess.Run()
+   at ThoughtWorks.CruiseControl.Core.Util.ProcessExecutor.Execute(ProcessInfo processInfo)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.ProcessSourceControl.Execute(ProcessInfo processInfo)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.Svn.GetModifications(IIntegrationResult from, IIntegrationResult to)
+   at ThoughtWorks.CruiseControl.Core.Sourcecontrol.QuietPeriod.GetModifications(ISourceControl sourceControl, IIntegrationResult lastBuild, IIntegrationResult thisBuild)
+   at ThoughtWorks.CruiseControl.Core.IntegrationRunner.GetModifications(IIntegrationResult from, IIntegrationResult to)
+   at ThoughtWorks.CruiseControl.Core.IntegrationRunner.Integrate(IntegrationRequest request)]]></exception>
+</cruisecontrol>

@@ -1,0 +1,70 @@
+<cruisecontrol project="DemoCruiseProject">
+  <request source="EPIC" buildCondition="ForceBuild">mdesai triggered a build (ForceBuild) from EPIC</request>
+  <parameters>
+    <parameter name="$CCNetArtifactDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts" />
+    <parameter name="$CCNetBuildCondition" value="ForceBuild" />
+    <parameter name="$CCNetBuildDate" value="2010-10-11" />
+    <parameter name="$CCNetBuildTime" value="17:29:05" />
+    <parameter name="$CCNetFailureUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetIntegrationStatus" value="Unknown" />
+    <parameter name="$CCNetLabel" value="1" />
+    <parameter name="$CCNetLastIntegrationStatus" value="Failure" />
+    <parameter name="$CCNetListenerFile" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml" />
+    <parameter name="$CCNetModifyingUsers" value="System.Collections.ArrayList" />
+    <parameter name="$CCNetNumericLabel" value="1" />
+    <parameter name="$CCNetProject" value="DemoCruiseProject" />
+    <parameter name="$CCNetProjectUrl" value="http://localhost/EggChicken/" />
+    <parameter name="$CCNetRequestSource" value="EPIC" />
+    <parameter name="$CCNetUser" value="mdesai" />
+    <parameter name="$CCNetWorkingDirectory" value="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory" />
+  </parameters>
+  <modifications />
+  <integrationProperties>
+    <CCNetArtifactDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts</CCNetArtifactDirectory>
+    <CCNetBuildCondition>ForceBuild</CCNetBuildCondition>
+    <CCNetBuildDate>2010-10-11</CCNetBuildDate>
+    <CCNetBuildTime>17:29:05</CCNetBuildTime>
+    <CCNetFailureUsers />
+    <CCNetIntegrationStatus>Success</CCNetIntegrationStatus>
+    <CCNetLabel>1</CCNetLabel>
+    <CCNetLastIntegrationStatus>Failure</CCNetLastIntegrationStatus>
+    <CCNetListenerFile>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\Artifacts\DemoCruiseProject_ListenFile.xml</CCNetListenerFile>
+    <CCNetModifyingUsers />
+    <CCNetNumericLabel>1</CCNetNumericLabel>
+    <CCNetProject>DemoCruiseProject</CCNetProject>
+    <CCNetProjectUrl>http://localhost/EggChicken/</CCNetProjectUrl>
+    <CCNetRequestSource>EPIC</CCNetRequestSource>
+    <CCNetWorkingDirectory>C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory</CCNetWorkingDirectory>
+    <CCNetUser>mdesai</CCNetUser>
+    <LastIntegrationStatus>Failure</LastIntegrationStatus>
+    <LastSuccessfulIntegrationLabel>1</LastSuccessfulIntegrationLabel>
+    <LastModificationDate>10/10/2010 5:29:07 PM</LastModificationDate>
+  </integrationProperties>
+  <build date="2010-10-11 17:29:05" buildtime="00:00:02" buildcondition="ForceBuild">
+
+<msbuild startTime="10/11/2010 17:29:06" elapsedTime="00:00:01" elapsedSeconds="1" success="true">
+  <project file="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken.sln" startTime="10/11/2010 17:29:06" elapsedTime="00:00:01" elapsedSeconds="1" success="true">
+    <target name="ValidateSolutionConfiguration" startTime="10/11/2010 17:29:06" elapsedTime="00:00:00" elapsedSeconds="0" success="true">
+      <message level="normal"><![CDATA[Building solution configuration "Release|x86".]]></message>
+    </target>
+    <target name="Build" startTime="10/11/2010 17:29:06" elapsedTime="00:00:01" elapsedSeconds="1" success="true">
+      <project file="C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\EggChicken.csproj" startTime="10/11/2010 17:29:06" elapsedTime="00:00:01" elapsedSeconds="1" success="true">
+        <target name="ResolveAssemblyReferences" startTime="10/11/2010 17:29:06" elapsedTime="00:00:00" elapsedSeconds="0" success="true">
+          <message level="normal"><![CDATA[A TargetFramework profile exclusion list will be generated.]]></message>
+        </target>
+        <target name="GenerateTargetFrameworkMonikerAttribute" startTime="10/11/2010 17:29:06" elapsedTime="00:00:00" elapsedSeconds="0" success="true">
+          <message level="normal"><![CDATA[Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.]]></message>
+        </target>
+        <target name="CoreCompile" startTime="10/11/2010 17:29:06" elapsedTime="00:00:01" elapsedSeconds="1" success="true">
+          <message level="high"><![CDATA[C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /platform:x86 /errorreport:prompt /warn:4 /define:TRACE /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /optimize+ /out:obj\x86\Release\EggChicken.exe /target:exe ChickenOrEgg.cs Properties\AssemblyInfo.cs "C:\Users\mdesai\AppData\Local\Temp\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs"]]></message>
+        </target>
+        <target name="CopyFilesToOutputDirectory" startTime="10/11/2010 17:29:07" elapsedTime="00:00:00" elapsedSeconds="0" success="true">
+          <message level="normal"><![CDATA[Copying file from "obj\x86\Release\EggChicken.exe" to "bin\Release\EggChicken.exe".]]></message>
+          <message level="high"><![CDATA[EggChicken -> C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\bin\Release\EggChicken.exe]]></message>
+          <message level="normal"><![CDATA[Copying file from "obj\x86\Release\EggChicken.pdb" to "bin\Release\EggChicken.pdb".]]></message>
+        </target>
+      </project>
+    </target>
+  </project>
+</msbuild></build>
+</cruisecontrol>

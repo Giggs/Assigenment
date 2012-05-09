@@ -1,0 +1,5 @@
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\bin\Debug\EggChicken.exe
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\bin\Debug\EggChicken.pdb
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\obj\x86\Debug\EggChicken.exe
+C:\Program Files\CruiseControl.NET\server\DemoCruiseProject\WorkingDirectory\Source\EggChicken\obj\x86\Debug\EggChicken.pdb

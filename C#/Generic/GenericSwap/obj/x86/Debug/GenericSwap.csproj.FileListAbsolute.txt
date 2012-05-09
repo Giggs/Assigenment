@@ -1,0 +1,5 @@
+D:\Darshana\Generic\Generic\GenericSwap\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Darshana\Generic\Generic\GenericSwap\bin\Debug\GenericSwap.exe
+D:\Darshana\Generic\Generic\GenericSwap\bin\Debug\GenericSwap.pdb
+D:\Darshana\Generic\Generic\GenericSwap\obj\x86\Debug\GenericSwap.exe
+D:\Darshana\Generic\Generic\GenericSwap\obj\x86\Debug\GenericSwap.pdb
